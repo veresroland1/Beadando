@@ -1,0 +1,16 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">Munka neve</label>
+    <div class="col-sm-10"></div>
+        <input type="text" class="form-control" [(ngModel)]="MunkaNeve"
+        placeholder="ide írja a munka nevét">
+
+    </div>
+
+<button (click)="addMunkak()" *ngIf="mk.MunkaID==0" class="btn btn-primary">
+    Hozzáad
+</button>
+
+<button (click)="updateMunkak()" *ngIf="mk.MunkaID!=0" class="btn btn-primary">
+    Módosít
+</button>
